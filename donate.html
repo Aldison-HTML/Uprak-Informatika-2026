@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('change', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    });
+        
+    function donate() {
+        const amount = document.querySelector('.donation-input').value;
+        const message = document.getElementById('donation-message');
+        const name = document.getElementById('donor-name').value || "Anonymous";
+
+        if (amount > 0) {
+            message.innerHTML = `Thank you, <strong>${name}</strong>! Your <strong>generous donation</strong> of <strong>$${amount}</strong> helps us <strong>protect orangutans</strong> and their <strong>habitats</strong> as well as the <strong>forest</strong> around them.`;
+        } else {
+            message.innerHTML = '<strong>Please enter a valid donation amount.</strong>';
+        }
+        document.getElementById("donation-amount").value = "";
+        document.getElementById("donor-name").value = "";
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Save the <strong>Orangutans</strong> | Protect <strong>Forests</strong> & <strong>Wildlife</strong></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="donate.html">Donate</a>
+            <a href="aboutme.html">About the Creator</a>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+    </header>
+    <article>
+        <div class="donation-box">
+            <h2><strong>Support Our Cause</strong></h2>
+            <p>Enter your <strong>donation amount</strong>:</p>
+            <input type="number" class="donation-input" placeholder="$ Amount" id="donation-amount">
+            <input type="text" class="donation-input" placeholder="Your Name" id="donor-name">
+            <button class="donation-btn" onclick="donate()"><strong>Donate</strong></button>
+            <p id="donation-message"></p>
+        </div>
+    </article>
+</body>
+</html>

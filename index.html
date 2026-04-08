@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('change', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Save the <strong>Orangutans</strong> | Protect <strong>Forests</strong> & <strong>Wildlife</strong></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="donate.html">Donate</a>
+            <a href="aboutme.html">About the Creator</a>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+    </header>
+    <article>
+        <h2>What are <strong>Orangutans</strong>? What is happening to them?</h2>
+        <img class="align-left" src="orangutan_eating-bananas_1medium.jpg" alt="Orangutan in the wild" width="448px">
+        <p>
+            <strong>Orangutans</strong> are some of the closest relatives to humans and are <strong>highly intelligent</strong> animals. They can form <strong>strong bonds</strong> and even feel <strong>emotions</strong> like us. In fact, the name “orangutan” comes from Indonesian words meaning <strong>“person of the forest”</strong>, showing how closely they are connected to us. 
+            <strong>Orangutans</strong> are <strong>endangered</strong> animals native to the rainforests of <strong>Borneo</strong> and <strong>Sumatra</strong>. They face major threats from <strong>habitat loss</strong> and <strong>poaching</strong> - the <strong>Bornean orangutan population</strong>, which was estimated at over 200,000 in the early 1970s, has declined by more than 50% due to deforestation and hunting, while <strong>Sumatran orangutans</strong> are estimated to number between 6,600 and 14,000. They are classified as a <strong>critically endangered</strong> species. 
+            Our initiative is dedicated to <strong>protecting orangutans</strong> and their habitats through <strong>conservation efforts</strong>. By supporting our cause, you can help ensure a <strong>future</strong> for these incredible creatures and the <strong>ecosystems</strong> they inhabit. <a href="projects.html"><strong>Find out more!</strong></a>
+        </p>
+    </article>
+    <div class="separator"></div>
+    <article>
+        <h2>Why Choose Us</h2>
+        <p>
+            We are a dedicated team on a mission to protect nature and the amazing creatures that keep our ecosystems balanced. Our team is not only skilled but also experienced in conservation efforts, working hard to save orangutans and preserve their habitats.
+            Even a single dollar can make a real difference. If ten thousand people each donate just a dollar, we can protect forests, save countless animals, and ensure these habitats continue to thrive. Every contribution matters—no matter the size, it helps create a brighter future for these incredible creatures.
+            <br>
+            <br>
+            Your support goes beyond a donation—it helps fund rescue operations, habitat restoration, and community programs, making a lasting impact. We are grateful for every gift and every act of kindness. Together, we can make a real difference for orangutans and the forests they call home.
+        </p>
+        <a href="donate.html" class="donate"><strong>Donate Now</strong></a>
+    </article>
+</body>
+</html>
